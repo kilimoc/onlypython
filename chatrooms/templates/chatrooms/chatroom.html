@@ -1,0 +1,12 @@
+{% extends 'home/header.html' %}
+{% block content %}
+<div class="container">
+    <h2>ChatRooms-An Enthuasistic Community Ready to Share ideas</h2>
+    <p>Be part of them by joining one of the chatroom and get to know what your friends are thinking.Ensure full participation </p>
+        {% for chatroom in chatrooms %}
+           <a href="">{{chatroom}}</a><br/>
+        {% endfor %}
+
+</div>
+
+{% endblock %}
